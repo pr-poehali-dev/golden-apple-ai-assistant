@@ -114,7 +114,7 @@ const Index = () => {
               </div>
               <div>
                 <img 
-                  src="https://cdn.poehali.dev/projects/3b29489d-e6c0-404b-b837-b767edeb2875/files/54467f34-c14c-4bd0-8518-b9c64d502f2a.jpg"
+                  src="https://cdn.poehali.dev/files/fa7e3b3b-c4ac-4e4a-b6dd-690eae6a36cc.jpg"
                   alt="Косметика"
                   className="w-full rounded-sm"
                 />
