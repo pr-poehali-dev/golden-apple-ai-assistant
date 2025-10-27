@@ -109,9 +109,7 @@ const Index = () => {
                     size="lg" 
                     variant="outline"
                     onClick={() => scrollToSection('catalog')}
-                  >
-                    Каталог
-                  </Button>
+                  >Поддержка</Button>
                 </div>
               </div>
               <div>
