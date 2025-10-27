@@ -76,9 +76,7 @@ const Index = () => {
               variant="outline"
               size="sm"
               className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white"
-            >
-              AI Консультант
-            </Button>
+            >ИИ-помощник</Button>
           </div>
         </div>
       </nav>
