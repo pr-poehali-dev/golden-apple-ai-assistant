@@ -9,7 +9,7 @@ const Index = () => {
   const [chatOpen, setChatOpen] = useState(false);
   const [cameraOpen, setCameraOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: 'ai', text: 'Привет! Я AI-консультант. Помогу подобрать косметику!' }
+    { role: 'ai', text: 'Привет! Я твой личный AI-консультант. Помогу тебе с твоим запросом' }
   ]);
   const [inputMessage, setInputMessage] = useState('');
   const chatEndRef = useRef<HTMLDivElement>(null);
