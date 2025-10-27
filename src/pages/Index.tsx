@@ -15,27 +15,27 @@ const Index = () => {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   const products = [
-    { name: 'Сыворотка с витамином C', brand: 'Dior', price: '4 990 ₽', rating: 4.8, color: 'from-pink-100 to-rose-100' },
-    { name: 'Матовая помада Rouge', brand: 'Chanel', price: '3 200 ₽', rating: 4.9, color: 'from-purple-100 to-pink-100' },
-    { name: 'Увлажняющий крем', brand: 'Lancôme', price: '5 400 ₽', rating: 4.7, color: 'from-blue-100 to-purple-100' },
-    { name: 'Тушь для ресниц', brand: 'YSL', price: '2 800 ₽', rating: 4.8, color: 'from-green-100 to-teal-100' },
-    { name: 'Тональный крем', brand: 'Estée Lauder', price: '4 200 ₽', rating: 4.6, color: 'from-yellow-100 to-amber-100' },
-    { name: 'Палетка теней', brand: 'MAC', price: '3 900 ₽', rating: 4.9, color: 'from-indigo-100 to-purple-100' }
+    { name: 'Сыворотка с витамином C', brand: 'Dior', price: '4 990 ₽', rating: 4.8, color: 'from-lime-100 to-green-100' },
+    { name: 'Матовая помада Rouge', brand: 'Chanel', price: '3 200 ₽', rating: 4.9, color: 'from-yellow-100 to-lime-100' },
+    { name: 'Увлажняющий крем', brand: 'Lancôme', price: '5 400 ₽', rating: 4.7, color: 'from-green-100 to-emerald-100' },
+    { name: 'Тушь для ресниц', brand: 'YSL', price: '2 800 ₽', rating: 4.8, color: 'from-lime-100 to-yellow-100' },
+    { name: 'Тональный крем', brand: 'Estée Lauder', price: '4 200 ₽', rating: 4.6, color: 'from-yellow-100 to-green-100' },
+    { name: 'Палетка теней', brand: 'MAC', price: '3 900 ₽', rating: 4.9, color: 'from-green-100 to-lime-100' }
   ];
 
   const brands = [
-    { name: 'Dior', color: 'bg-pink-100 hover:bg-pink-200' },
-    { name: 'Chanel', color: 'bg-purple-100 hover:bg-purple-200' },
-    { name: 'Lancôme', color: 'bg-blue-100 hover:bg-blue-200' },
-    { name: 'Estée Lauder', color: 'bg-rose-100 hover:bg-rose-200' },
-    { name: 'YSL', color: 'bg-indigo-100 hover:bg-indigo-200' },
-    { name: 'MAC', color: 'bg-violet-100 hover:bg-violet-200' }
+    { name: 'Dior', color: 'bg-lime-100 hover:bg-lime-200' },
+    { name: 'Chanel', color: 'bg-green-100 hover:bg-green-200' },
+    { name: 'Lancôme', color: 'bg-yellow-100 hover:bg-yellow-200' },
+    { name: 'Estée Lauder', color: 'bg-lime-100 hover:bg-lime-200' },
+    { name: 'YSL', color: 'bg-emerald-100 hover:bg-emerald-200' },
+    { name: 'MAC', color: 'bg-green-100 hover:bg-green-200' }
   ];
 
   const reviews = [
-    { author: 'Анна К.', rating: 5, text: 'Отличный магазин! Помогли подобрать идеальный оттенок.', avatar: 'bg-pink-200' },
-    { author: 'Мария С.', rating: 5, text: 'Виртуальная примерка работает отлично.', avatar: 'bg-purple-200' },
-    { author: 'Елена П.', rating: 4, text: 'Большой выбор брендов, качество на высоте!', avatar: 'bg-blue-200' }
+    { author: 'Анна К.', rating: 5, text: 'Отличный магазин! Помогли подобрать идеальный оттенок.', avatar: 'bg-lime-200' },
+    { author: 'Мария С.', rating: 5, text: 'Виртуальная примерка работает отлично.', avatar: 'bg-green-200' },
+    { author: 'Елена П.', rating: 4, text: 'Большой выбор брендов, качество на высоте!', avatar: 'bg-yellow-200' }
   ];
 
   const aiResponses = [
@@ -66,27 +66,27 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
-      <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-lg z-50 border-b border-pink-100">
+    <div className="min-h-screen bg-gradient-to-br from-lime-50 via-green-50 to-yellow-50">
+      <nav className="fixed top-0 w-full bg-white/70 backdrop-blur-lg z-50 border-b border-lime-200">
         <div className="container mx-auto px-8 py-5">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="text-2xl">🌸</div>
-              <h1 className="text-xl font-medium bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <div className="text-2xl">🍏</div>
+              <h1 className="text-xl font-medium bg-gradient-to-r from-lime-500 via-green-500 to-yellow-500 bg-clip-text text-transparent">
                 Золотое Яблоко
               </h1>
             </div>
             
             <div className="hidden md:flex gap-8 text-sm text-gray-600">
-              <button onClick={() => scrollToSection('catalog')} className="hover:text-pink-400 transition-colors">Каталог</button>
-              <button onClick={() => scrollToSection('brands')} className="hover:text-purple-400 transition-colors">Бренды</button>
-              <button onClick={() => scrollToSection('reviews')} className="hover:text-blue-400 transition-colors">Отзывы</button>
+              <button onClick={() => scrollToSection('catalog')} className="hover:text-lime-500 transition-colors">Каталог</button>
+              <button onClick={() => scrollToSection('brands')} className="hover:text-green-500 transition-colors">Бренды</button>
+              <button onClick={() => scrollToSection('reviews')} className="hover:text-yellow-500 transition-colors">Отзывы</button>
             </div>
 
             <Button 
               onClick={() => setChatOpen(true)}
               size="sm"
-              className="bg-gradient-to-r from-pink-300 to-purple-300 hover:from-pink-400 hover:to-purple-400 text-white border-0 shadow-lg shadow-pink-200/50"
+              className="bg-gradient-to-r from-lime-400 to-green-400 hover:from-lime-500 hover:to-green-500 text-gray-900 border-0 shadow-lg shadow-lime-200/50"
             >
               <Icon name="Sparkles" size={14} />
               AI Консультант
@@ -100,10 +100,10 @@ const Index = () => {
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div className="space-y-6 animate-fade-in">
-                <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-pink-100 to-purple-100 text-xs font-medium text-purple-700">
+                <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-lime-100 to-green-100 text-xs font-medium text-green-700">
                   ✨ AI Технологии
                 </div>
-                <h2 className="text-5xl md:text-6xl font-light leading-tight tracking-tight bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+                <h2 className="text-5xl md:text-6xl font-light leading-tight tracking-tight bg-gradient-to-r from-lime-500 via-green-500 to-yellow-500 bg-clip-text text-transparent">
                   Виртуальная примерка макияжа
                 </h2>
                 <p className="text-gray-600 text-lg leading-relaxed">
@@ -113,7 +113,7 @@ const Index = () => {
                   <Button 
                     size="lg"
                     onClick={() => setCameraOpen(true)}
-                    className="bg-gradient-to-r from-pink-400 to-purple-400 hover:from-pink-500 hover:to-purple-500 text-white shadow-xl shadow-pink-200/50 rounded-full"
+                    className="bg-gradient-to-r from-lime-400 to-green-400 hover:from-lime-500 hover:to-green-500 text-gray-900 shadow-xl shadow-lime-200/50 rounded-full"
                   >
                     <Icon name="Camera" size={18} />
                     Примерить сейчас
@@ -122,7 +122,7 @@ const Index = () => {
                     size="lg" 
                     variant="outline"
                     onClick={() => scrollToSection('catalog')}
-                    className="border-purple-200 text-purple-600 hover:bg-purple-50 rounded-full"
+                    className="border-lime-300 text-green-700 hover:bg-lime-50 rounded-full"
                   >
                     <Icon name="ShoppingCart" size={18} />
                     Каталог
@@ -133,7 +133,7 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/projects/3b29489d-e6c0-404b-b837-b767edeb2875/files/54467f34-c14c-4bd0-8518-b9c64d502f2a.jpg"
                   alt="Косметика"
-                  className="w-full rounded-3xl shadow-2xl shadow-pink-200/30"
+                  className="w-full rounded-3xl shadow-2xl shadow-lime-200/30"
                 />
               </div>
             </div>
@@ -143,7 +143,7 @@ const Index = () => {
         <section id="catalog" className="py-24 px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-lime-500 to-green-500 bg-clip-text text-transparent">
                 Каталог товаров
               </h2>
               <p className="text-gray-600">Популярные продукты этого месяца</p>
@@ -155,7 +155,7 @@ const Index = () => {
                   <CardContent className="p-0">
                     <div className={`aspect-square bg-gradient-to-br ${product.color} flex items-center justify-center text-7xl relative overflow-hidden`}>
                       <div className="absolute inset-0 bg-white/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button size="sm" className="bg-white/90 text-purple-600 hover:bg-white rounded-full">
+                        <Button size="sm" className="bg-white/90 text-green-700 hover:bg-white rounded-full"
                           <Icon name="Eye" size={14} />
                           Посмотреть
                         </Button>
@@ -163,7 +163,7 @@ const Index = () => {
                       💄
                     </div>
                     <div className="p-6 space-y-3">
-                      <p className="text-xs text-purple-400 uppercase tracking-wider font-medium">{product.brand}</p>
+                      <p className="text-xs text-lime-500 uppercase tracking-wider font-medium">{product.brand}</p>
                       <h3 className="font-medium text-gray-800">{product.name}</h3>
                       <div className="flex items-center justify-between">
                         <p className="text-xl font-light text-gray-800">{product.price}</p>
@@ -173,7 +173,7 @@ const Index = () => {
                         </div>
                       </div>
                       <Button 
-                        className="w-full bg-gradient-to-r from-pink-300 to-purple-300 hover:from-pink-400 hover:to-purple-400 text-white border-0 shadow-md rounded-full"
+                        className="w-full bg-gradient-to-r from-lime-400 to-green-400 hover:from-lime-500 hover:to-green-500 text-gray-900 border-0 shadow-md rounded-full"
                         size="sm"
                       >
                         <Icon name="ShoppingCart" size={14} />
@@ -190,7 +190,7 @@ const Index = () => {
         <section id="brands" className="py-24 px-8 bg-white/50 backdrop-blur-sm">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-green-500 to-yellow-500 bg-clip-text text-transparent">
                 Премиум бренды
               </h2>
               <p className="text-gray-600">Ведущие мировые производители косметики</p>
@@ -211,7 +211,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/projects/3b29489d-e6c0-404b-b837-b767edeb2875/files/acd05e6a-7d46-4380-a41d-8186eb556e8f.jpg"
                 alt="Бренды"
-                className="w-full rounded-3xl shadow-2xl shadow-purple-200/30"
+                className="w-full rounded-3xl shadow-2xl shadow-lime-200/30"
               />
             </div>
           </div>
@@ -220,7 +220,7 @@ const Index = () => {
         <section id="reviews" className="py-24 px-8">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16 animate-fade-in">
-              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-transparent">
                 Отзывы клиентов
               </h2>
               <p className="text-gray-600">Что говорят о нас</p>
@@ -279,7 +279,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gradient-to-br from-pink-50/50 to-purple-50/50">
+            <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-gradient-to-br from-lime-50/50 to-green-50/50">
               {messages.map((msg, idx) => (
                 <div 
                   key={idx} 
@@ -287,14 +287,14 @@ const Index = () => {
                 >
                   {msg.role === 'ai' && (
                     <Avatar className="w-8 h-8">
-                      <AvatarFallback className="bg-gradient-to-br from-pink-300 to-purple-300 text-white text-xs">AI</AvatarFallback>
+                      <AvatarFallback className="bg-gradient-to-br from-lime-400 to-green-400 text-gray-900 text-xs">AI</AvatarFallback>
                     </Avatar>
                   )}
                   <div 
                     className={`max-w-[75%] p-4 rounded-2xl text-sm shadow-md ${
                       msg.role === 'ai' 
                         ? 'bg-white text-gray-700' 
-                        : 'bg-gradient-to-r from-pink-300 to-purple-300 text-white'
+                        : 'bg-gradient-to-r from-lime-400 to-green-400 text-gray-900'
                     }`}
                   >
                     {msg.text}
@@ -304,19 +304,19 @@ const Index = () => {
               <div ref={chatEndRef} />
             </div>
 
-            <div className="p-6 bg-white border-t border-pink-100">
+            <div className="p-6 bg-white border-t border-lime-200">
               <div className="flex gap-2">
                 <Input 
                   placeholder="Ваш вопрос..." 
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-                  className="border-purple-200 focus:border-purple-300 rounded-full"
+                  className="border-lime-200 focus:border-lime-300 rounded-full"
                 />
                 <Button 
                   onClick={sendMessage}
                   size="icon"
-                  className="bg-gradient-to-r from-pink-300 to-purple-300 hover:from-pink-400 hover:to-purple-400 text-white rounded-full shadow-lg"
+                  className="bg-gradient-to-r from-lime-400 to-green-400 hover:from-lime-500 hover:to-green-500 text-gray-900 rounded-full shadow-lg"
                 >
                   <Icon name="Send" size={16} />
                 </Button>
