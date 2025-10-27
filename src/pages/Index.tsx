@@ -61,7 +61,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
-        <div className="container mx-auto px-8 py-5 bg-lime-400">
+        <div className="container mx-auto px-8 py-5">
           <div className="flex items-center justify-between">
             <h1 className="text-xl font-semibold tracking-tight">Золотое Яблоко</h1>
             
